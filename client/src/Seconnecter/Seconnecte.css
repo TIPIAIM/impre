@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');*/
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+.tete{
+  font-family: 'Great Vibes', cursive;
+}
+
+.sidebare {
+  background-color:pink;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-blue {
+  color: rgb(28, 163, 1);
+}
+
+
+.sidebar div {
+    max-width: 500px;
+}
+h1, h2, h3 {
+  color: rgb(10, 197, 10) ;
+}
+
+
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

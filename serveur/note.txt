@@ -1,0 +1,17 @@
+//subassement exemple
+const multer = require('multer')   
+
+  const storage = multer.diskStorage({
+    destination: function (req, fichier, cb) {
+      cb(null, './fichier')
+    },
+    filename: function (req, fichier, cb) {
+      const uniqueSuffix = Date.now()
+      cb(null, uniqueSuffix + fichier.originalname)
+    }
+  })
+  
+  const upload = multer({ storage: storage })
+app.post("/GestAjoutSubassementdanslaDB",upload.single('fichier'), async(req,res) =>{//creons le model dans le serveur donc la route qui contient la table 'LesclientTab'
+console.log(req.fichier)
+})

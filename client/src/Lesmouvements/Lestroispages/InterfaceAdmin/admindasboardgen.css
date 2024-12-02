@@ -1,0 +1,58 @@
+#scrollable-area {
+    overflow-y: auto;
+    padding-bottom: 20px; /* add some padding to the bottom to create a smooth scrolling effect */
+  }
+  
+  #scrollable-area::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  #scrollable-area::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 10px;
+  }
+  
+  #scrollable-area::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  /* add a smooth scrolling effect */
+  #scrollable-area {
+    scroll-behavior: smooth;
+  }
+  .grid {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .BarChartCategories {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+  

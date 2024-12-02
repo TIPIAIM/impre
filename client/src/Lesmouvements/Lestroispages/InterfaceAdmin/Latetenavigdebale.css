@@ -1,0 +1,29 @@
+.nav-item {
+    color: #ffffff; /* Couleur du texte */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-item .nav-label {
+    color: #ffffff; /* Couleur du texte */
+    transition: color 0.3s;
+  }
+  
+  .nav-item svg {
+    color: #ffffff; /* Couleur des icônes */
+    transition: color 0.3s;
+  }
+  
+  .nav-item:hover, .nav-item.active {
+    background-color: #4a90e2; /* Couleur de fond à l'état survolé et actif */
+    color: white;
+    border-radius: 0.25rem;
+  }
+  
+  .nav-item:hover .nav-label, .nav-item.active .nav-label {
+    color: white;
+  }
+  
+  .nav-item:hover svg, .nav-item.active svg {
+    color: white;
+  }
+  
